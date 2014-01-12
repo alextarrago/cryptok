@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72DFAE39184FF3CA00825123 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAE38184FF3CA00825123 /* Foundation.framework */; };
+		72DFAE3B184FF3CA00825123 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAE3A184FF3CA00825123 /* CoreGraphics.framework */; };
+		72DFAE3D184FF3CA00825123 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAE3C184FF3CA00825123 /* UIKit.framework */; };
+		72DFAE43184FF3CA00825123 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72DFAE41184FF3CA00825123 /* InfoPlist.strings */; };
+		72DFAE45184FF3CA00825123 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE44184FF3CA00825123 /* main.m */; };
+		72DFAE49184FF3CA00825123 /* DBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE48184FF3CA00825123 /* DBAppDelegate.m */; };
+		72DFAE4C184FF3CA00825123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DFAE4A184FF3CA00825123 /* Main.storyboard */; };
+		72DFAE4F184FF3CA00825123 /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE4E184FF3CA00825123 /* DBViewController.m */; };
+		72DFAE51184FF3CA00825123 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DFAE50184FF3CA00825123 /* Images.xcassets */; };
+		72DFAE58184FF3CA00825123 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAE57184FF3CA00825123 /* XCTest.framework */; };
+		72DFAE59184FF3CA00825123 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAE38184FF3CA00825123 /* Foundation.framework */; };
+		72DFAE5A184FF3CA00825123 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAE3C184FF3CA00825123 /* UIKit.framework */; };
+		72DFAE62184FF3CA00825123 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72DFAE60184FF3CA00825123 /* InfoPlist.strings */; };
+		72DFAE64184FF3CA00825123 /* cryptokTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE63184FF3CA00825123 /* cryptokTests.m */; };
+		72DFAE70184FF42F00825123 /* DBSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE6F184FF42F00825123 /* DBSettings.m */; };
+		72DFAE7F184FF4A700825123 /* DBCurrencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE7D184FF4A700825123 /* DBCurrencyManager.m */; };
+		72DFAE89184FF50200825123 /* DBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE87184FF50200825123 /* DBUtils.m */; };
+		72DFAEB0184FF54700825123 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAE9F184FF54700825123 /* AFSecurityPolicy.m */; };
+		72DFAEB1184FF54700825123 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEA0184FF54700825123 /* AFURLSessionManager.m */; };
+		72DFAEB2184FF54700825123 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEA5184FF54700825123 /* AFURLConnectionOperation.m */; };
+		72DFAEB3184FF54700825123 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEA7184FF54700825123 /* AFHTTPSessionManager.m */; };
+		72DFAEB4184FF54700825123 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEA9184FF54700825123 /* AFURLResponseSerialization.m */; };
+		72DFAEB5184FF54700825123 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEAA184FF54700825123 /* AFHTTPRequestOperationManager.m */; };
+		72DFAEB6184FF54700825123 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEAB184FF54700825123 /* AFURLRequestSerialization.m */; };
+		72DFAEB7184FF54700825123 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEAD184FF54700825123 /* AFHTTPRequestOperation.m */; };
+		72DFAEB8184FF54700825123 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAEAE184FF54700825123 /* AFNetworkReachabilityManager.m */; };
+		72DFAEBA184FF5D700825123 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAEB9184FF5D700825123 /* iAd.framework */; };
+		72DFAEBC184FF5DE00825123 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAEBB184FF5DE00825123 /* AdSupport.framework */; };
+		72DFAEBE184FF60100825123 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAEBD184FF60100825123 /* MessageUI.framework */; };
+		72DFAEC0184FF60800825123 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAEBF184FF60800825123 /* Social.framework */; };
+		72DFAEC4184FF61500825123 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAEC3184FF61500825123 /* SystemConfiguration.framework */; };
+		72DFAEC8184FF62300825123 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DFAEC7184FF62300825123 /* AudioToolbox.framework */; };
+		72DFAECB184FFCAE00825123 /* DBCustomTradeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DFAECA184FFCAE00825123 /* DBCustomTradeCell.m */; };
+		FF72E4AC187C2B3900490DDD /* BlurryModalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FF72E4AA187C2B3900490DDD /* BlurryModalSegue.m */; };
+		FF72E4AF187C2C3100490DDD /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = FF72E4AD187C2C3000490DDD /* UIImage+ImageEffects.m */; };
+		FF72E4B4187C2C6400490DDD /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = FF72E4B1187C2C6400490DDD /* MZAppearance.m */; };
+		FF72E4B5187C2C6400490DDD /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF72E4B3187C2C6400490DDD /* NSInvocation+Copy.m */; };
+		FF842F1E18501836008C1A78 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF842F1C18501836008C1A78 /* Default-568h@2x.png */; };
+		FF842F1F18501836008C1A78 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF842F1D18501836008C1A78 /* Default@2x.png */; };
+		FFAC16971850089F00444406 /* DBCryptoKPrivateBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAC16961850089F00444406 /* DBCryptoKPrivateBrain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72DFAE5B184FF3CA00825123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72DFAE2D184FF3CA00825123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72DFAE34184FF3CA00825123;
+			remoteInfo = cryptok;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72DFAE35184FF3CA00825123 /* cryptok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DFAE38184FF3CA00825123 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72DFAE3A184FF3CA00825123 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		72DFAE3C184FF3CA00825123 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		72DFAE40184FF3CA00825123 /* cryptok-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cryptok-Info.plist"; sourceTree = "<group>"; };
+		72DFAE42184FF3CA00825123 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72DFAE44184FF3CA00825123 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72DFAE46184FF3CA00825123 /* cryptok-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cryptok-Prefix.pch"; sourceTree = "<group>"; };
+		72DFAE47184FF3CA00825123 /* DBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAppDelegate.h; sourceTree = "<group>"; };
+		72DFAE48184FF3CA00825123 /* DBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAppDelegate.m; sourceTree = "<group>"; };
+		72DFAE4B184FF3CA00825123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72DFAE4D184FF3CA00825123 /* DBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		72DFAE4E184FF3CA00825123 /* DBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		72DFAE50184FF3CA00825123 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		72DFAE56184FF3CA00825123 /* cryptokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DFAE57184FF3CA00825123 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		72DFAE5F184FF3CA00825123 /* cryptokTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cryptokTests-Info.plist"; sourceTree = "<group>"; };
+		72DFAE61184FF3CA00825123 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72DFAE63184FF3CA00825123 /* cryptokTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cryptokTests.m; sourceTree = "<group>"; };
+		72DFAE6E184FF42F00825123 /* DBSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSettings.h; sourceTree = "<group>"; };
+		72DFAE6F184FF42F00825123 /* DBSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSettings.m; sourceTree = "<group>"; };
+		72DFAE7C184FF4A700825123 /* DBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConstants.h; sourceTree = "<group>"; };
+		72DFAE7D184FF4A700825123 /* DBCurrencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCurrencyManager.m; sourceTree = "<group>"; };
+		72DFAE7E184FF4A700825123 /* DBCurrencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCurrencyManager.h; sourceTree = "<group>"; };
+		72DFAE87184FF50200825123 /* DBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBUtils.m; sourceTree = "<group>"; };
+		72DFAE88184FF50200825123 /* DBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBUtils.h; sourceTree = "<group>"; };
+		72DFAE9D184FF54700825123 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		72DFAE9E184FF54700825123 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		72DFAE9F184FF54700825123 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		72DFAEA0184FF54700825123 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		72DFAEA1184FF54700825123 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		72DFAEA2184FF54700825123 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		72DFAEA3184FF54700825123 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		72DFAEA4184FF54700825123 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		72DFAEA5184FF54700825123 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		72DFAEA6184FF54700825123 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		72DFAEA7184FF54700825123 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		72DFAEA8184FF54700825123 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		72DFAEA9184FF54700825123 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		72DFAEAA184FF54700825123 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		72DFAEAB184FF54700825123 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		72DFAEAC184FF54700825123 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		72DFAEAD184FF54700825123 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		72DFAEAE184FF54700825123 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		72DFAEAF184FF54700825123 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		72DFAEB9184FF5D700825123 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		72DFAEBB184FF5DE00825123 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		72DFAEBD184FF60100825123 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		72DFAEBF184FF60800825123 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		72DFAEC1184FF60D00825123 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		72DFAEC3184FF61500825123 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		72DFAEC7184FF62300825123 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		72DFAEC9184FFCAE00825123 /* DBCustomTradeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCustomTradeCell.h; sourceTree = "<group>"; };
+		72DFAECA184FFCAE00825123 /* DBCustomTradeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCustomTradeCell.m; sourceTree = "<group>"; };
+		FF72E4AA187C2B3900490DDD /* BlurryModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurryModalSegue.m; sourceTree = "<group>"; };
+		FF72E4AB187C2B3900490DDD /* BlurryModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurryModalSegue.h; sourceTree = "<group>"; };
+		FF72E4AD187C2C3000490DDD /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		FF72E4AE187C2C3100490DDD /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		FF72E4B0187C2C6400490DDD /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
+		FF72E4B1187C2C6400490DDD /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
+		FF72E4B2187C2C6400490DDD /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		FF72E4B3187C2C6400490DDD /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		FF72E4B7187C3AEA00490DDD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF72E4B8187C3AEA00490DDD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF72E4BA187C3AF000490DDD /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF72E4BB187C3AF000490DDD /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF842F1C18501836008C1A78 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FF842F1D18501836008C1A78 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FFAC16951850089F00444406 /* DBCryptoKPrivateBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCryptoKPrivateBrain.h; sourceTree = "<group>"; };
+		FFAC16961850089F00444406 /* DBCryptoKPrivateBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCryptoKPrivateBrain.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72DFAE32184FF3CA00825123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DFAEC8184FF62300825123 /* AudioToolbox.framework in Frameworks */,
+				72DFAEC4184FF61500825123 /* SystemConfiguration.framework in Frameworks */,
+				72DFAEC0184FF60800825123 /* Social.framework in Frameworks */,
+				72DFAEBE184FF60100825123 /* MessageUI.framework in Frameworks */,
+				72DFAE3B184FF3CA00825123 /* CoreGraphics.framework in Frameworks */,
+				72DFAEBC184FF5DE00825123 /* AdSupport.framework in Frameworks */,
+				72DFAEBA184FF5D700825123 /* iAd.framework in Frameworks */,
+				72DFAE3D184FF3CA00825123 /* UIKit.framework in Frameworks */,
+				72DFAE39184FF3CA00825123 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DFAE53184FF3CA00825123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DFAE58184FF3CA00825123 /* XCTest.framework in Frameworks */,
+				72DFAE5A184FF3CA00825123 /* UIKit.framework in Frameworks */,
+				72DFAE59184FF3CA00825123 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72DFAE2C184FF3CA00825123 = {
+			isa = PBXGroup;
+			children = (
+				72DFAE3E184FF3CA00825123 /* cryptok */,
+				72DFAE5D184FF3CA00825123 /* cryptokTests */,
+				72DFAE37184FF3CA00825123 /* Frameworks */,
+				72DFAE36184FF3CA00825123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72DFAE36184FF3CA00825123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE35184FF3CA00825123 /* cryptok.app */,
+				72DFAE56184FF3CA00825123 /* cryptokTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72DFAE37184FF3CA00825123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAEC7184FF62300825123 /* AudioToolbox.framework */,
+				72DFAEC3184FF61500825123 /* SystemConfiguration.framework */,
+				72DFAEC1184FF60D00825123 /* Security.framework */,
+				72DFAEBF184FF60800825123 /* Social.framework */,
+				72DFAEBD184FF60100825123 /* MessageUI.framework */,
+				72DFAEBB184FF5DE00825123 /* AdSupport.framework */,
+				72DFAEB9184FF5D700825123 /* iAd.framework */,
+				72DFAE38184FF3CA00825123 /* Foundation.framework */,
+				72DFAE3A184FF3CA00825123 /* CoreGraphics.framework */,
+				72DFAE3C184FF3CA00825123 /* UIKit.framework */,
+				72DFAE57184FF3CA00825123 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DFAE3E184FF3CA00825123 /* cryptok */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE47184FF3CA00825123 /* DBAppDelegate.h */,
+				72DFAE48184FF3CA00825123 /* DBAppDelegate.m */,
+				72DFAE4A184FF3CA00825123 /* Main.storyboard */,
+				72DFAE6D184FF41E00825123 /* View Controllers */,
+				72DFAE77184FF44B00825123 /* Custom Cells */,
+				72DFAE50184FF3CA00825123 /* Images.xcassets */,
+				72DFAE7B184FF48200825123 /* Currency Manager */,
+				72DFAE80184FF4B000825123 /* Helpers */,
+				72DFAE3F184FF3CA00825123 /* Supporting Files */,
+			);
+			path = cryptok;
+			sourceTree = "<group>";
+		};
+		72DFAE3F184FF3CA00825123 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF842F201850183D008C1A78 /* img */,
+				72DFAE40184FF3CA00825123 /* cryptok-Info.plist */,
+				72DFAE41184FF3CA00825123 /* InfoPlist.strings */,
+				72DFAE44184FF3CA00825123 /* main.m */,
+				72DFAE46184FF3CA00825123 /* cryptok-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72DFAE5D184FF3CA00825123 /* cryptokTests */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE63184FF3CA00825123 /* cryptokTests.m */,
+				72DFAE5E184FF3CA00825123 /* Supporting Files */,
+			);
+			path = cryptokTests;
+			sourceTree = "<group>";
+		};
+		72DFAE5E184FF3CA00825123 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE5F184FF3CA00825123 /* cryptokTests-Info.plist */,
+				72DFAE60184FF3CA00825123 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72DFAE6D184FF41E00825123 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE4D184FF3CA00825123 /* DBViewController.h */,
+				72DFAE4E184FF3CA00825123 /* DBViewController.m */,
+				72DFAE6E184FF42F00825123 /* DBSettings.h */,
+				72DFAE6F184FF42F00825123 /* DBSettings.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		72DFAE77184FF44B00825123 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAEC9184FFCAE00825123 /* DBCustomTradeCell.h */,
+				72DFAECA184FFCAE00825123 /* DBCustomTradeCell.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		72DFAE7B184FF48200825123 /* Currency Manager */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE7C184FF4A700825123 /* DBConstants.h */,
+				72DFAE7E184FF4A700825123 /* DBCurrencyManager.h */,
+				72DFAE7D184FF4A700825123 /* DBCurrencyManager.m */,
+				FFAC16951850089F00444406 /* DBCryptoKPrivateBrain.h */,
+				FFAC16961850089F00444406 /* DBCryptoKPrivateBrain.m */,
+			);
+			name = "Currency Manager";
+			sourceTree = "<group>";
+		};
+		72DFAE80184FF4B000825123 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF72E4B0187C2C6400490DDD /* MZAppearance.h */,
+				FF72E4B1187C2C6400490DDD /* MZAppearance.m */,
+				FF72E4B2187C2C6400490DDD /* NSInvocation+Copy.h */,
+				FF72E4B3187C2C6400490DDD /* NSInvocation+Copy.m */,
+				FF72E4AD187C2C3000490DDD /* UIImage+ImageEffects.m */,
+				FF72E4AE187C2C3100490DDD /* UIImage+ImageEffects.h */,
+				FF72E4AA187C2B3900490DDD /* BlurryModalSegue.m */,
+				FF72E4AB187C2B3900490DDD /* BlurryModalSegue.h */,
+				72DFAE86184FF4EB00825123 /* AFNetworking */,
+				72DFAE85184FF4E300825123 /* Utilities */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		72DFAE85184FF4E300825123 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE88184FF50200825123 /* DBUtils.h */,
+				72DFAE87184FF50200825123 /* DBUtils.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		72DFAE86184FF4EB00825123 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				72DFAE9D184FF54700825123 /* AFSecurityPolicy.h */,
+				72DFAE9E184FF54700825123 /* AFNetworkReachabilityManager.h */,
+				72DFAE9F184FF54700825123 /* AFSecurityPolicy.m */,
+				72DFAEA0184FF54700825123 /* AFURLSessionManager.m */,
+				72DFAEA1184FF54700825123 /* AFHTTPSessionManager.h */,
+				72DFAEA2184FF54700825123 /* AFURLRequestSerialization.h */,
+				72DFAEA3184FF54700825123 /* AFURLResponseSerialization.h */,
+				72DFAEA4184FF54700825123 /* AFURLConnectionOperation.h */,
+				72DFAEA5184FF54700825123 /* AFURLConnectionOperation.m */,
+				72DFAEA6184FF54700825123 /* AFHTTPRequestOperation.h */,
+				72DFAEA7184FF54700825123 /* AFHTTPSessionManager.m */,
+				72DFAEA8184FF54700825123 /* AFHTTPRequestOperationManager.h */,
+				72DFAEA9184FF54700825123 /* AFURLResponseSerialization.m */,
+				72DFAEAA184FF54700825123 /* AFHTTPRequestOperationManager.m */,
+				72DFAEAB184FF54700825123 /* AFURLRequestSerialization.m */,
+				72DFAEAC184FF54700825123 /* AFNetworking.h */,
+				72DFAEAD184FF54700825123 /* AFHTTPRequestOperation.m */,
+				72DFAEAE184FF54700825123 /* AFNetworkReachabilityManager.m */,
+				72DFAEAF184FF54700825123 /* AFURLSessionManager.h */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		FF842F201850183D008C1A78 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				FF842F1C18501836008C1A78 /* Default-568h@2x.png */,
+				FF842F1D18501836008C1A78 /* Default@2x.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72DFAE34184FF3CA00825123 /* cryptok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DFAE67184FF3CA00825123 /* Build configuration list for PBXNativeTarget "cryptok" */;
+			buildPhases = (
+				72DFAE31184FF3CA00825123 /* Sources */,
+				72DFAE32184FF3CA00825123 /* Frameworks */,
+				72DFAE33184FF3CA00825123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cryptok;
+			productName = cryptok;
+			productReference = 72DFAE35184FF3CA00825123 /* cryptok.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72DFAE55184FF3CA00825123 /* cryptokTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DFAE6A184FF3CA00825123 /* Build configuration list for PBXNativeTarget "cryptokTests" */;
+			buildPhases = (
+				72DFAE52184FF3CA00825123 /* Sources */,
+				72DFAE53184FF3CA00825123 /* Frameworks */,
+				72DFAE54184FF3CA00825123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72DFAE5C184FF3CA00825123 /* PBXTargetDependency */,
+			);
+			name = cryptokTests;
+			productName = cryptokTests;
+			productReference = 72DFAE56184FF3CA00825123 /* cryptokTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72DFAE2D184FF3CA00825123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dribba Development";
+				TargetAttributes = {
+					72DFAE34184FF3CA00825123 = {
+						DevelopmentTeam = 5P4W243U59;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+					72DFAE55184FF3CA00825123 = {
+						TestTargetID = 72DFAE34184FF3CA00825123;
+					};
+				};
+			};
+			buildConfigurationList = 72DFAE30184FF3CA00825123 /* Build configuration list for PBXProject "cryptok" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				ca,
+			);
+			mainGroup = 72DFAE2C184FF3CA00825123;
+			productRefGroup = 72DFAE36184FF3CA00825123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72DFAE34184FF3CA00825123 /* cryptok */,
+				72DFAE55184FF3CA00825123 /* cryptokTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72DFAE33184FF3CA00825123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DFAE51184FF3CA00825123 /* Images.xcassets in Resources */,
+				FF842F1E18501836008C1A78 /* Default-568h@2x.png in Resources */,
+				FF842F1F18501836008C1A78 /* Default@2x.png in Resources */,
+				72DFAE43184FF3CA00825123 /* InfoPlist.strings in Resources */,
+				72DFAE4C184FF3CA00825123 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DFAE54184FF3CA00825123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DFAE62184FF3CA00825123 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72DFAE31184FF3CA00825123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DFAEB2184FF54700825123 /* AFURLConnectionOperation.m in Sources */,
+				72DFAECB184FFCAE00825123 /* DBCustomTradeCell.m in Sources */,
+				72DFAEB3184FF54700825123 /* AFHTTPSessionManager.m in Sources */,
+				72DFAE89184FF50200825123 /* DBUtils.m in Sources */,
+				72DFAE7F184FF4A700825123 /* DBCurrencyManager.m in Sources */,
+				72DFAEB1184FF54700825123 /* AFURLSessionManager.m in Sources */,
+				FF72E4AF187C2C3100490DDD /* UIImage+ImageEffects.m in Sources */,
+				FFAC16971850089F00444406 /* DBCryptoKPrivateBrain.m in Sources */,
+				72DFAEB8184FF54700825123 /* AFNetworkReachabilityManager.m in Sources */,
+				72DFAEB7184FF54700825123 /* AFHTTPRequestOperation.m in Sources */,
+				FF72E4B4187C2C6400490DDD /* MZAppearance.m in Sources */,
+				FF72E4B5187C2C6400490DDD /* NSInvocation+Copy.m in Sources */,
+				72DFAEB0184FF54700825123 /* AFSecurityPolicy.m in Sources */,
+				72DFAE49184FF3CA00825123 /* DBAppDelegate.m in Sources */,
+				FF72E4AC187C2B3900490DDD /* BlurryModalSegue.m in Sources */,
+				72DFAE4F184FF3CA00825123 /* DBViewController.m in Sources */,
+				72DFAEB5184FF54700825123 /* AFHTTPRequestOperationManager.m in Sources */,
+				72DFAE70184FF42F00825123 /* DBSettings.m in Sources */,
+				72DFAE45184FF3CA00825123 /* main.m in Sources */,
+				72DFAEB6184FF54700825123 /* AFURLRequestSerialization.m in Sources */,
+				72DFAEB4184FF54700825123 /* AFURLResponseSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DFAE52184FF3CA00825123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DFAE64184FF3CA00825123 /* cryptokTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72DFAE5C184FF3CA00825123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72DFAE34184FF3CA00825123 /* cryptok */;
+			targetProxy = 72DFAE5B184FF3CA00825123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72DFAE41184FF3CA00825123 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72DFAE42184FF3CA00825123 /* en */,
+				FF72E4B7187C3AEA00490DDD /* es */,
+				FF72E4BA187C3AF000490DDD /* ca */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72DFAE4A184FF3CA00825123 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72DFAE4B184FF3CA00825123 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72DFAE60184FF3CA00825123 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72DFAE61184FF3CA00825123 /* en */,
+				FF72E4B8187C3AEA00490DDD /* es */,
+				FF72E4BB187C3AF000490DDD /* ca */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72DFAE65184FF3CA00825123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		72DFAE66184FF3CA00825123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72DFAE68184FF3CA00825123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex Tarrago (5P4W243U59)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alex Tarrago (5P4W243U59)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cryptok/cryptok-Prefix.pch";
+				INFOPLIST_FILE = "cryptok/cryptok-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "026AA67A-9533-45C2-8A48-9E9F9AC69C3F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72DFAE69184FF3CA00825123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alex Tarrago (5P4W243U59)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alex Tarrago (5P4W243U59)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cryptok/cryptok-Prefix.pch";
+				INFOPLIST_FILE = "cryptok/cryptok-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "026AA67A-9533-45C2-8A48-9E9F9AC69C3F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		72DFAE6B184FF3CA00825123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cryptok.app/cryptok";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cryptok/cryptok-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "cryptokTests/cryptokTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		72DFAE6C184FF3CA00825123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cryptok.app/cryptok";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cryptok/cryptok-Prefix.pch";
+				INFOPLIST_FILE = "cryptokTests/cryptokTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72DFAE30184FF3CA00825123 /* Build configuration list for PBXProject "cryptok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DFAE65184FF3CA00825123 /* Debug */,
+				72DFAE66184FF3CA00825123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DFAE67184FF3CA00825123 /* Build configuration list for PBXNativeTarget "cryptok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DFAE68184FF3CA00825123 /* Debug */,
+				72DFAE69184FF3CA00825123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DFAE6A184FF3CA00825123 /* Build configuration list for PBXNativeTarget "cryptokTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DFAE6B184FF3CA00825123 /* Debug */,
+				72DFAE6C184FF3CA00825123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72DFAE2D184FF3CA00825123 /* Project object */;
+}

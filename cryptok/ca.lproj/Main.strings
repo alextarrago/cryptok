@@ -1,0 +1,60 @@
+
+/* Class = "IBUILabel"; text = "You want to see how much you have in your BTC-e account? Just insert your personal API keys."; ObjectID = "17E-lC-OUw"; */
+"17E-lC-OUw.text" = "You want to see how much you have in your BTC-e account? Just insert your personal API keys.";
+
+/* Class = "IBUILabel"; text = "Rates are automatically updated every 15 seconds from the selected provider"; ObjectID = "981-ai-2pv"; */
+"981-ai-2pv.text" = "Rates are automatically updated every 15 seconds from the selected provider";
+
+/* Class = "IBUILabel"; text = "Rates are autoupdated every fifteen seconds"; ObjectID = "AOe-Oy-DEd"; */
+"AOe-Oy-DEd.text" = "Rates are autoupdated every fifteen seconds";
+
+/* Class = "IBUIButton"; normalTitle = "back"; ObjectID = "EW9-9i-Kow"; */
+"EW9-9i-Kow.normalTitle" = "back";
+
+/* Class = "IBUILabel"; text = "Choose the currency to present all the cryptocurrencies"; ObjectID = "IzI-4F-TvA"; */
+"IzI-4F-TvA.text" = "Choose the currency to present all the cryptocurrencies";
+
+/* Class = "IBUIButton"; normalTitle = "close"; ObjectID = "ORg-qS-vRK"; */
+"ORg-qS-vRK.normalTitle" = "close";
+
+/* Class = "IBUISegmentedControl"; SSV-tp-XNV.segmentTitles[0] = "CNY"; ObjectID = "SSV-tp-XNV"; */
+"SSV-tp-XNV.segmentTitles[0]" = "CNY";
+
+/* Class = "IBUISegmentedControl"; SSV-tp-XNV.segmentTitles[1] = "BTC"; ObjectID = "SSV-tp-XNV"; */
+"SSV-tp-XNV.segmentTitles[1]" = "BTC";
+
+/* Class = "IBUISegmentedControl"; SaY-eY-8jv.segmentTitles[0] = "BTC-E"; ObjectID = "SaY-eY-8jv"; */
+"SaY-eY-8jv.segmentTitles[0]" = "BTC-E";
+
+/* Class = "IBUISegmentedControl"; SaY-eY-8jv.segmentTitles[1] = "OKCoin (nd)"; ObjectID = "SaY-eY-8jv"; */
+"SaY-eY-8jv.segmentTitles[1]" = "OKCoin (nd)";
+
+/* Class = "IBUISegmentedControl"; ao9-xa-2Ll.segmentTitles[0] = "USD"; ObjectID = "ao9-xa-2Ll"; */
+"ao9-xa-2Ll.segmentTitles[0]" = "USD";
+
+/* Class = "IBUISegmentedControl"; ao9-xa-2Ll.segmentTitles[1] = "EUR"; ObjectID = "ao9-xa-2Ll"; */
+"ao9-xa-2Ll.segmentTitles[1]" = "EUR";
+
+/* Class = "IBUISegmentedControl"; ao9-xa-2Ll.segmentTitles[2] = "BTC"; ObjectID = "ao9-xa-2Ll"; */
+"ao9-xa-2Ll.segmentTitles[2]" = "BTC";
+
+/* Class = "IBUILabel"; text = "Enter your BTC-e account > Profile > API Keys > Create Key (Perms: just 'info'!) > Copy your keys."; ObjectID = "feq-HH-Yb6"; */
+"feq-HH-Yb6.text" = "Enter your BTC-e account > Profile > API Keys > Create Key (Perms: just 'info'!) > Copy your keys.";
+
+/* Class = "IBUIButton"; normalTitle = "Save"; ObjectID = "lcu-kA-1ao"; */
+"lcu-kA-1ao.normalTitle" = "Save";
+
+/* Class = "IBUILabel"; text = "Saved!"; ObjectID = "nYK-uW-4gl"; */
+"nYK-uW-4gl.text" = "Saved!";
+
+/* Class = "IBUIButton"; normalTitle = "close"; ObjectID = "ofh-Ka-mlM"; */
+"ofh-Ka-mlM.normalTitle" = "close";
+
+/* Class = "IBUITextField"; placeholder = "  Secret Key"; ObjectID = "xCF-Ox-abE"; */
+"xCF-Ox-abE.placeholder" = "  Secret Key";
+
+/* Class = "IBUITextField"; placeholder = "  Key"; ObjectID = "xhT-Mu-3Fl"; */
+"xhT-Mu-3Fl.placeholder" = "  Key";
+
+/* Class = "IBUILabel"; text = "hello [at] dribba [dot] com"; ObjectID = "yzv-av-7M4"; */
+"yzv-av-7M4.text" = "hello [at] dribba [dot] com";
