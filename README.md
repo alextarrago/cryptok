@@ -1,7 +1,7 @@
 Cryptok
 ==========
 
-Find it in the AppStore (http://goo.gl/7XY7gb)
+Find it on the AppStore (http://goo.gl/7XY7gb)
 
 LICENSE
 ==========
